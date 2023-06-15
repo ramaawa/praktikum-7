@@ -16,10 +16,10 @@ class EmployeeController extends Controller
     public function index()
     {
         $pageTitle = 'Employee List';
-    
+
         // ELOQUENT
         $employees = Employee::all();
-    
+
         return view('employee.index', [
             'pageTitle' => $pageTitle,
             'employees' => $employees
@@ -32,10 +32,10 @@ class EmployeeController extends Controller
     public function create()
     {
         $pageTitle = 'Create Employee';
-    
+
         // ELOQUENT
         $positions = Position::all();
-    
+
         return view('employee.create', compact('pageTitle', 'positions'));
     }
 
@@ -47,7 +47,7 @@ class EmployeeController extends Controller
     $messages = [
         'required' => ':Attribute harus diisi.',
         'email' => 'Isi :attribute dengan format yang benar',
-        'numeric' => 'Isi :attribute dengan angka'
+        'numeric' => 'Isi :attribute angka'
     ];
 
     $validator = Validator::make($request->all(), [
