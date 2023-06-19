@@ -8,7 +8,7 @@
             </div>
             <div class="col-lg-3 col-xl-2">
                 <div class="d-grid gap-2">
-                    <a href="{{ route('employees.create') }}" class="btn btn-primary">Create Employee</a>
+                    <a href="{{ route('employees.create') }}" class="btn btn-primary">Buat list karyawan</a>
                 </div>
             </div>
         </div>
@@ -17,11 +17,11 @@
             <table class="table table-bordered table-hover table-striped mb-0 bg-white">
                 <thead>
                     <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th>nama depan</th>
+                        <th>nama akhir</th>
                         <th>Email</th>
-                        <th>Age</th>
-                        <th>Position</th>
+                        <th>umur</th>
+                        <th>Posisi</th>
                         <th></th>
                     </tr>
                 </thead>
